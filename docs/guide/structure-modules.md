@@ -79,6 +79,9 @@ return [
 ];
 ```
 
+Remember that, in an Yii application you can use Yii::$app to access application settings. In a module you should use 
+$this->module to access specific module settings configured by \Yii::configure($this, require __DIR__ . '/config.php');
+
 
 ### Controllers in Modules <span id="controllers-in-modules"></span>
 
