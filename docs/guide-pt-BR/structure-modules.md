@@ -88,6 +88,13 @@ return [
 ];
 ```
 
+Lembre que, em uma aplicação Yii você pode acessar as configurações via Yii::$app. Dentro de um módulo, 
+para acessar as cofigurações específicas do módulo, você deve usar $this->module
+
+Exemplo:
+
+Na aplicação: Yii::$app->params
+No módulo: $this->module->params
 
 ### Controllers em Módulos <span id="controllers-in-modules"></span>
 
